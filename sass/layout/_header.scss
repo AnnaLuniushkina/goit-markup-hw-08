@@ -132,6 +132,8 @@
 	fill: currentColor;
 }
 
+// Мобильное меню
+
 .burger-button,
 .button-close {
 	background-color: transparent;
@@ -139,6 +141,14 @@
 	border: none;
 	padding: 0;
 	line-height: 0;
+
+	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+	&:hover,
+	&:focus {
+		color: var(--accent-color);
+		fill: var(--accent-color);
+	}
 }
 
 .burger-button {
@@ -151,13 +161,6 @@
 .button-close__icon {
 	width: 40px;
 	height: 40px;
-
-	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-	&:hover,
-	&:focus {
-		fill: var(--accent-color);
-	}
 }
 
 .mobile-menu {

@@ -46,63 +46,61 @@
                         </svg>+38 096 111 11 11</a>
                 </li>
             </ul>
+
+            <!-- Мобильное меню -->
+            
+            <button type="button" class="button burger-button" data-menu-open><svg class="burger-button__icon">
+                    <use href="./images/icons.svg#icon-menu-open"></use>
+                </svg>
+            </button>
+            
+            <div class="mobile-menu" data-menu>
+                <button type="button" class="button button-close" data-menu-close><svg class="button-close__icon">
+                        <use href="./images/icons.svg#icon-menu-close"></use>
+                    </svg></button>
+            
+                <div class="mobile-menu-box">
+                    <ul class="mobile-menu__nav list">
+                        <li class="mobile-menu__nav-items"><a class="mobile-menu__nav-link link"
+                                href="index.html">Студия</a></li>
+                        <li class="mobile-menu__nav-items"><a class="mobile-menu__nav-link link current" href="portfolio.html">Портфолио</a>
+                        </li>
+                        <li class="mobile-menu__nav-items"><a class="mobile-menu__nav-link link" href="">Контакты</a></li>
+                    </ul>
+                </div>
+            
+                <div class="mobile-menu-holder">
+                    <ul class="mobile-menu__contacts list">
+                        <li class="mobile-menu__contacts-items">
+                            <a class="mobile-menu__contacts-link link" href="tel:+380961111111">+38 096 111 11 11</a>
+                        </li>
+                        <li class="mobile-menu__contacts-items">
+                            <a class="mobile-menu__contacts-link link" href="mailto:info@devstudio.com">
+                                info@devstudio.com</a>
+                        </li>
+                    </ul>
+            
+                    <ul class="mobile-menu__socials list">
+                        <li class="mobile-menu__socials-items">
+                            <a class="mobile-menu__socials-link link" href="">
+                                Instagram</a>
+                        </li>
+                        <li class="mobile-menu__socials-items">
+                            <a class="mobile-menu__socials-link link" href="">Twitter</a>
+                        </li>
+                        <li class="mobile-menu__socials-items">
+                            <a class="mobile-menu__socials-link link" href="">Facebook</a>
+                        </li>
+                        <li class="mobile-menu__socials-items">
+                            <a class="mobile-menu__socials-link link" href="">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </header>
-    <main>
 
-        <!-- Мобильное меню -->
-        
-        <button type="button" class="button burger-button" data-menu-open><svg class="burger-button__icon">
-                <use href="./images/icons.svg#icon-menu-open"></use>
-            </svg>
-        </button>
-        
-        <div class="mobile-menu" data-menu>
-            <button type="button" class="button button-close" data-menu-close><svg class="button-close__icon">
-                    <use href="./images/icons.svg#icon-menu-close"></use>
-                </svg></button>
-        
-            <div class="mobile-menu-box">
-                <ul class="mobile-menu__nav list">
-                    <li class="mobile-menu__nav-items"><a class="mobile-menu__nav-link link current"
-                            href="index.html">Студия</a></li>
-                    <li class="mobile-menu__nav-items"><a class="mobile-menu__nav-link link" href="portfolio.html">Портфолио</a>
-                    </li>
-                    <li class="mobile-menu__nav-items"><a class="mobile-menu__nav-link link" href="">Контакты</a></li>
-                </ul>
-            </div>
-        
-            <div class="mobile-menu-holder">
-                <ul class="mobile-menu__contacts list">
-                    <li class="mobile-menu__contacts-items">
-                        <a class="mobile-menu__contacts-link link" href="tel:+380961111111">+38 096 111 11 11</a>
-                    </li>
-                    <li class="mobile-menu__contacts-items">
-                        <a class="mobile-menu__contacts-link link" href="mailto:info@devstudio.com">
-                            info@devstudio.com</a>
-                    </li>
-                </ul>
-        
-                <ul class="mobile-menu__socials list">
-                    <li class="mobile-menu__socials-items">
-                        <a class="mobile-menu__socials-link link" href="">
-                            Instagram</a>
-                    </li>
-                    <li class="mobile-menu__socials-items">
-                        <a class="mobile-menu__socials-link link" href="">Twitter</a>
-                    </li>
-                    <li class="mobile-menu__socials-items">
-                        <a class="mobile-menu__socials-link link" href="">Facebook</a>
-                    </li>
-                    <li class="mobile-menu__socials-items">
-                        <a class="mobile-menu__socials-link link" href="">LinkedIn</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        </div>
-        </header>
-        <main>
+    <main>
 
         <!-- Наши проекты Кнопки-->
 
@@ -133,7 +131,7 @@
                 <ul class="gallery-list list">
                     <li class="gallery-items">
                         <div class="gallery-pictures-block">
-                            <img src="./images/laptop-screen.jpg" alt="Веб-сайт на экране ноутбука">
+                            <img src="./images/laptop-screen.jpg" alt="Веб-сайт на экране ноутбука" width="100%">
                             <p class="pictures-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту
                                 платформу для цифрового
                                 шпионажа и атак на защищённые сервера конкурентов.</p>
@@ -146,7 +144,7 @@
 
                     <li class="gallery-items">
                         <div class="gallery-pictures-block">
-                        <img src="./images/poster-basketball.jpg" alt="Постер с баскетболистами">
+                        <img src="./images/poster-basketball.jpg" alt="Постер с баскетболистами" width="100%">
                             <p class="pictures-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quis quos quae quam voluptate eaque similique! Nostrum libero error quaerat.</p>
                         </div>
                         <div class="gallery-block">
@@ -157,7 +155,7 @@
 
                     <li class="gallery-items">
                         <div class="gallery-pictures-block">
-                        <img src="./images/logo-seafood.jpg" alt="Логотип ресторана">
+                        <img src="./images/logo-seafood.jpg" alt="Логотип ресторана" width="100%">
                         <p class="pictures-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quis quos quae quam voluptate
                             eaque similique! Nostrum libero error quaerat.</p>
                         </div>
@@ -169,7 +167,7 @@
 
                     <li class="gallery-items">
                         <div class="gallery-pictures-block">
-                        <img src="./images/headphones.jpg" alt="Наушники">
+                        <img src="./images/headphones.jpg" alt="Наушники" width="100%">
                         <p class="pictures-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quis quos quae quam voluptate
                             eaque similique! Nostrum libero error quaerat.</p>
                         </div>
@@ -181,7 +179,7 @@
 
                     <li class="gallery-items">
                         <div class="gallery-pictures-block">
-                        <img src="./images/boxes.jpg" alt="Картонные коробочки">
+                        <img src="./images/boxes.jpg" alt="Картонные коробочки" width="100%">
                         <p class="pictures-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quis quos quae quam voluptate
                             eaque similique! Nostrum libero error quaerat.</p>
                         </div>
@@ -193,7 +191,7 @@
 
                     <li class="gallery-items">
                         <div class="gallery-pictures-block">
-                        <img src="./images/monitor.jpg" alt="Веб-сайт на экране компьютера">
+                        <img src="./images/monitor.jpg" alt="Веб-сайт на экране компьютера" width="100%">
                         <p class="pictures-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quis quos quae quam voluptate
                             eaque similique! Nostrum libero error quaerat.</p>
                         </div>
@@ -205,7 +203,7 @@
 
                     <li class="gallery-items">
                         <div class="gallery-pictures-block">
-                        <img src="./images/book.jpg" alt="Журнал">
+                        <img src="./images/book.jpg" alt="Журнал" width="100%">
                         <p class="pictures-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quis quos quae quam voluptate
                             eaque similique! Nostrum libero error quaerat.</p>
                         </div>
@@ -217,7 +215,7 @@
 
                     <li class="gallery-items">
                         <div class="gallery-pictures-block">
-                        <img src="./images/project-lab.jpg" alt="Картонная бирка">
+                        <img src="./images/project-lab.jpg" alt="Картонная бирка" width="100%">
                         <p class="pictures-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quis quos quae quam voluptate
                             eaque similique! Nostrum libero error quaerat.</p>
                         </div>
@@ -229,7 +227,7 @@
 
                     <li class="gallery-items">
                         <div class="gallery-pictures-block">
-                        <img src="./images/business.jpg" alt="Ноутбук">
+                        <img src="./images/business.jpg" alt="Ноутбук" width="100%">
                         <p class="pictures-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quis quos quae quam voluptate
                             eaque similique! Nostrum libero error quaerat.</p>
                         </div>
@@ -247,49 +245,52 @@
 
     <footer class="footer">
         <div class="container footer-container">
-            <div class="footer-adress">
-                <a class="logo-footer logo link" href="index.html" lang="en"><span class="accent">Web</span>Studio</a>
-                <address class="address">
-                    <a class="address-link link" href="https://goo.gl/maps/7NLm5bi6WT52SHXh7">г. Киев, пр-т Леси
-                        Украинки,
-                        26</a><br>
-                    <a class="footer-contacts link" href="mailto:info@example.com">info@example.com</a> <br>
-                    <a class="footer-contacts link" href="tel:+380991111111">+38 099 111 11 11</a>
-                </address>
+            <div class="footer-row">
+                <div class="footer-adress">
+                    <a class="logo-footer logo link" href="index.html" lang="en"><span class="accent">Web</span>Studio</a>
+                    <address class="address">
+                        <a class="address-link link" href="https://goo.gl/maps/7NLm5bi6WT52SHXh7">г. Киев, пр-т Леси
+                            Украинки,
+                            26</a><br>
+                        <a class="footer-contacts link" href="mailto:info@example.com">info@example.com</a> <br>
+                        <a class="footer-contacts link" href="tel:+380991111111">+38 099 111 11 11</a>
+                    </address>
+                </div>
+                <div class="footer-social">
+                    <b class="footer-join">присоединяйтесь</b>
+                    <ul class="footer-list list">
+                        <li class="footer-social-item">
+                            <a href="" class="footer-social-link">
+                                <svg class="footer-social-icon" width="20px" height="20px">
+                                    <use href="./images/icons.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-social-item">
+                            <a href="" class="footer-social-link">
+                                <svg class="footer-social-icon" width="20px" height="20px">
+                                    <use href="./images/icons.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-social-item">
+                            <a href="" class="footer-social-link">
+                                <svg class="footer-social-icon" width="20px" height="20px">
+                                    <use href="./images/icons.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-social-item">
+                            <a href="" class="footer-social-link">
+                                <svg class="footer-social-icon" width="20px" height="20px">
+                                    <use href="./images/icons.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="footer-social">
-                <b class="footer-join">присоединяйтесь</b>
-                <ul class="footer-list list">
-                    <li class="footer-social-item">
-                        <a href="" class="footer-social-link">
-                            <svg class="footer-social-icon" width="20px" height="20px">
-                                <use href="./images/icons.svg#icon-instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer-social-item">
-                        <a href="" class="footer-social-link">
-                            <svg class="footer-social-icon" width="20px" height="20px">
-                                <use href="./images/icons.svg#icon-twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer-social-item">
-                        <a href="" class="footer-social-link">
-                            <svg class="footer-social-icon" width="20px" height="20px">
-                                <use href="./images/icons.svg#icon-facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer-social-item">
-                        <a href="" class="footer-social-link">
-                            <svg class="footer-social-icon" width="20px" height="20px">
-                                <use href="./images/icons.svg#icon-linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+            
 
             <!-- Форма в футере -->
             
@@ -307,7 +308,7 @@
 
         </div>
     </footer>
-    
+
     <script src="./js/mobile-menu.js"></script>
 
 </body>
