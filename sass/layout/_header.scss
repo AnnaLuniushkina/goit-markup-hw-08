@@ -130,6 +130,25 @@
 	margin-right: 10px;
 	vertical-align: middle;
 	fill: currentColor;
+
+	@media screen and (min-width: 1200px) {
+		width: 10px;
+		height: 16px;
+	}
+}
+
+.contacts__svg.email {
+	@media screen and (min-width: 1200px) {
+		width: 16px;
+		height: 12px;
+	}
+}
+
+.contacts__svg.tel {
+	@media screen and (min-width: 1200px) {
+		width: 10px;
+		height: 16px;
+	}
 }
 
 // Мобильное меню

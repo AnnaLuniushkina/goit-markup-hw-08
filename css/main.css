@@ -538,6 +538,27 @@ img {
   fill: currentColor;
 }
 
+@media screen and (min-width: 1200px) {
+  .contacts__svg {
+    width: 10px;
+    height: 16px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__svg.email {
+    width: 16px;
+    height: 12px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__svg.tel {
+    width: 10px;
+    height: 16px;
+  }
+}
+
 .burger-button,
 .button-close {
   background-color: transparent;
