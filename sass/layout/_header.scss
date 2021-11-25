@@ -165,7 +165,9 @@
 
 .mobile-menu {
 	position: fixed;
-	z-index: 3;
+	z-index: 5;
+	overflow-y: scroll;
+
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -173,9 +175,12 @@
 	top: 0;
 	left: 0;
 	width: 100vw;
-	height: 100vh;
+	height: 101vh;
 
-	padding: 48px 40px;
+	padding-top: 48px;
+	padding-bottom: 48px;
+	padding-right: 40px;
+	padding-left: 40px;
 
 	background: #ffffff;
 	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
@@ -196,7 +201,7 @@
 .button-close {
 	position: absolute;
 	top: 10px;
-	right: 15px;
+	right: 20px;
 }
 
 .mobile-menu__nav-items:not(:last-child) {
@@ -244,18 +249,24 @@
 	letter-spacing: 0.02em;
 
 	color: #757575;
+}
 
-	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-	&:hover,
-	&:focus,
-	&:active {
-		color: var(--accent-color);
+.mobile-menu__contacts-link--big {
+	@media screen and (max-width: 479px) {
+		font-size: 8vw;
 	}
+
+	font-weight: 500;
+	font-size: 34px;
+	line-height: 1.17;
+	letter-spacing: 0.02em;
+
+	color: #2196f3;
 }
 
 .mobile-menu__socials {
 	display: flex;
+	flex-wrap: wrap;
 }
 
 .mobile-menu__socials-items:not(:last-child) {

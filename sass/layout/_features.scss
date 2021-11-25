@@ -1,4 +1,4 @@
-.features-list {
+.features__list {
 	margin-bottom: -30px;
 
 	@media screen and (min-width: 768px) {
@@ -9,7 +9,7 @@
 	}
 }
 
-.features-item {
+.features__item {
 	width: 100%;
 	margin-bottom: 30px;
 
@@ -23,7 +23,7 @@
 	}
 }
 
-.features-img-container {
+.features__img-container {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -35,7 +35,7 @@
 	margin-bottom: 30px;
 }
 
-.features-list-title {
+.features__list-title {
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 1.14;
@@ -51,7 +51,7 @@
 	}
 }
 
-.features-text {
+.features__text {
 	font-size: 14px;
 	line-height: 1.71;
 	letter-spacing: 0.03em;

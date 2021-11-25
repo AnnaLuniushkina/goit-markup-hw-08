@@ -58,28 +58,29 @@
                 <button type="button" class="button button-close" data-menu-close><svg class="button-close__icon">
                         <use href="./images/icons.svg#icon-menu-close"></use>
                     </svg></button>
-            
+                
                 <div class="mobile-menu-box">
                     <ul class="mobile-menu__nav list">
-                        <li class="mobile-menu__nav-items"><a class="mobile-menu__nav-link link"
-                                href="index.html">Студия</a></li>
-                        <li class="mobile-menu__nav-items"><a class="mobile-menu__nav-link link current" href="portfolio.html">Портфолио</a>
+                        <li class="mobile-menu__nav-items"><a class="mobile-menu__nav-link link" href="index.html">Студия</a></li>
+                        <li class="mobile-menu__nav-items"><a class="mobile-menu__nav-link link current"
+                                href="portfolio.html">Портфолио</a>
                         </li>
                         <li class="mobile-menu__nav-items"><a class="mobile-menu__nav-link link" href="">Контакты</a></li>
                     </ul>
                 </div>
-            
+                
                 <div class="mobile-menu-holder">
                     <ul class="mobile-menu__contacts list">
                         <li class="mobile-menu__contacts-items">
-                            <a class="mobile-menu__contacts-link link" href="tel:+380961111111">+38 096 111 11 11</a>
+                            <a class="mobile-menu__contacts-link mobile-menu__contacts-link--big link" href="tel:+380961111111">+38 096
+                                111 11 11</a>
                         </li>
                         <li class="mobile-menu__contacts-items">
                             <a class="mobile-menu__contacts-link link" href="mailto:info@devstudio.com">
                                 info@devstudio.com</a>
                         </li>
                     </ul>
-            
+                
                     <ul class="mobile-menu__socials list">
                         <li class="mobile-menu__socials-items">
                             <a class="mobile-menu__socials-link link" href="">
@@ -106,134 +107,512 @@
 
         <section class="projects section">
             <div class="container">
-                <h2 class="projects-title visually-hidden">Наши проекты</h2>
+                <h2 class="projects__title visually-hidden">Наши проекты</h2>
 
-                <ul class="buttons-list list">
-                    <li class="buttons-items">
+                <ul class="projects__buttons-list list">
+                    <li class="projects__buttons-items">
                         <button type="button" class="buttons">Все</button>
                     </li>
-                    <li class="buttons-items">
+                    <li class="projects__buttons-items">
                         <button type="button" class="buttons">Веб-сайты</button>
                     </li>
-                    <li class="buttons-items">
+                    <li class="projects__buttons-items">
                         <button type="button" class="buttons">Приложения</button>
                     </li>
-                    <li class="buttons-items">
+                    <li class="projects__buttons-items">
                         <button type="button" class="buttons">Дизайн</button>
                     </li>
-                    <li class="buttons-items">
+                    <li class="projects__buttons-items">
                         <button type="button" class="buttons">Маркетинг</button>
                     </li>
                 </ul>
                 
                 <!-- Наши проекты Галерея карточек-->
 
-                <ul class="gallery-list list">
-                    <li class="gallery-items">
-                        <div class="gallery-pictures-block">
-                            <img src="./images/laptop-screen.jpg" alt="Веб-сайт на экране ноутбука" width="100%">
-                            <p class="pictures-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту
+                <ul class="projects__gallery-list list">
+                    <li class="projects__gallery-items">
+                        <div class="projects__gallery-img-block">
+                            <picture>
+                                <source media="(min-width: 1200px)" srcset="
+                                ./images/projects/projects-1-desktop.webp 1x,
+                                ./images/projects/projects-1-desktop@2x.webp 2x
+                                "
+                                type="image/webp"
+                                >
+
+                                <source media="(min-width: 1200px)" srcset="
+                                ./images/projects/projects-1-desktop.jpg 1x,
+                                ./images/projects/projects-1-desktop@2x.jpg 2x
+                                "
+                                >
+
+                                <source media="(min-width: 768px)" srcset="
+                                ./images/projects/projects-1-tablet.webp 1x,
+                                ./images/projects/projects-1-tablet@2x.webp 2x
+                                "
+                                type="image/webp"
+                                >
+
+                                <source media="(min-width: 768px)" srcset="
+                                ./images/projects/projects-1-tablet.jpg 1x,
+                                ./images/projects/projects-1-tablet@2x.jpg 2x
+                                "
+                                >
+
+                                <source srcset="
+                                ./images/projects/projects-1.webp 1x,
+                                ./images/projects/projects-1@2x.webp 2x
+                                "
+                                type="image/webp"
+                                >
+
+                                <source srcset="
+                                ./images/projects/projects-1.jpg 1x,
+                                ./images/projects/projects-1@2x.jpg 2x
+                                "
+                                >
+                                
+                                <img src="./images/projects/projects-1.jpg" alt="Веб-сайт на экране ноутбука">
+                            </picture>
+                        
+                            <p class="projects__gallery-pictures-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту
                                 платформу для цифрового
                                 шпионажа и атак на защищённые сервера конкурентов.</p>
                         </div> 
-                        <div class="gallery-block">
-                            <h2 class="list-titles">Технокряк</h2>
-                            <p class="list-text">Веб-сайт</p>
+                        <div class="projects__gallery-block">
+                            <h2 class="projects__gallery-list-titles">Технокряк</h2>
+                            <p class="projects__gallery-list-text">Веб-сайт</p>
                         </div>
                     </li>
 
-                    <li class="gallery-items">
-                        <div class="gallery-pictures-block">
-                        <img src="./images/poster-basketball.jpg" alt="Постер с баскетболистами" width="100%">
-                            <p class="pictures-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quis quos quae quam voluptate eaque similique! Nostrum libero error quaerat.</p>
+                    <li class="projects__gallery-items">
+                        <div class="projects__gallery-img-block">
+                            <picture>
+                                <source media="(min-width: 1200px)" srcset="
+                                ./images/projects/projects-2-desktop.webp 1x,
+                                ./images/projects/projects-2-desktop@2x.webp 2x
+                                "
+                                type="image/webp"
+                                >
+
+                                <source media="(min-width: 1200px)" srcset="
+                                ./images/projects/projects-2-desktop.jpg 1x,
+                                ./images/projects/projects-2-desktop@2x.jpg 2x
+                                "
+                                >
+
+                                <source media="(min-width: 768px)" srcset="
+                                ./images/projects/projects-2-tablet.webp 1x,
+                                ./images/projects/projects-2-tablet@2x.webp 2x
+                                "
+                                type="image/webp"
+                                >
+
+                                <source media="(min-width: 768px)" srcset="
+                                ./images/projects/projects-2-tablet.jpg 1x,
+                                ./images/projects/projects-2-tablet@2x.jpg 2x
+                                "
+                                >
+
+                                <source srcset="
+                                ./images/projects/projects-2.webp 1x,
+                                ./images/projects/projects-2@2x.webp 2x
+                                "
+                                type="image/webp"
+                                >
+
+                                <source srcset="
+                                ./images/projects/projects-2.jpg 1x,
+                                ./images/projects/projects-2@2x.jpg 2x
+                                "
+                                >
+                                
+                                <img src="./images/projects/projects-2.jpg" alt="Постер с баскетболистами">
+                            </picture>
+                
+                            <p class="projects__gallery-pictures-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quis quos quae quam voluptate eaque similique! Nostrum libero error quaerat.</p>
                         </div>
-                        <div class="gallery-block">
-                            <h2 class="list-titles">Постер<span lang="en">New Orlean vs Golden Star</span></h2>
-                            <p class="list-text">Дизайн</p>
+                        <div class="projects__gallery-block">
+                            <h2 class="projects__gallery-list-titles poster">Постер <span lang="en">New Orlean vs Golden Star</span></h2>
+                            <p class="projects__gallery-list-text">Дизайн</p>
                         </div>
                     </li>
 
-                    <li class="gallery-items">
-                        <div class="gallery-pictures-block">
-                        <img src="./images/logo-seafood.jpg" alt="Логотип ресторана" width="100%">
-                        <p class="pictures-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quis quos quae quam voluptate
+                    <li class="projects__gallery-items">
+                        <div class="projects__gallery-img-block">
+                            <picture>
+                                <source media="(min-width: 1200px)" srcset="
+                                ./images/projects/projects-3-desktop.webp 1x,
+                                ./images/projects/projects-3-desktop@2x.webp 2x
+                                "
+                                type="image/webp"
+                                >
+
+                                <source media="(min-width: 1200px)" srcset="
+                                ./images/projects/projects-3-desktop.jpg 1x,
+                                ./images/projects/projects-3-desktop@2x.jpg 2x
+                                "
+                                >
+
+                                <source media="(min-width: 768px)" srcset="
+                                ./images/projects/projects-3-tablet.webp 1x,
+                                ./images/projects/projects-3-tablet@2x.webp 2x
+                                "
+                                type="image/webp"
+                                >
+
+                                <source media="(min-width: 768px)" srcset="
+                                ./images/projects/projects-3-tablet.jpg 1x,
+                                ./images/projects/projects-3-tablet@2x.jpg 2x
+                                "
+                                >
+
+                                <source srcset="
+                                ./images/projects/projects-3.webp 1x,
+                                ./images/projects/projects-3@2x.webp 2x
+                                "
+                                type="image/webp"
+                                >
+
+                                <source srcset="
+                                ./images/projects/projects-3.jpg 1x,
+                                ./images/projects/projects-3@2x.jpg 2x
+                                "
+                                >
+                                
+                                <img src="./images/projects/projects-3.jpg" alt="Логотип ресторана">
+                            </picture>
+                        
+                        <p class="projects__gallery-pictures-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quis quos quae quam voluptate
                             eaque similique! Nostrum libero error quaerat.</p>
                         </div>
-                        <div class="gallery-block">
-                            <h2 class="list-titles">Ресторан<span lang="en">Seafood</span></h2>
-                            <p class="list-text">Приложение</p>
+                        <div class="projects__gallery-block">
+                            <h2 class="projects__gallery-list-titles">Ресторан <span lang="en">Seafood</span></h2>
+                            <p class="projects__gallery-list-text">Приложение</p>
                         </div>
                     </li>
 
-                    <li class="gallery-items">
-                        <div class="gallery-pictures-block">
-                        <img src="./images/headphones.jpg" alt="Наушники" width="100%">
-                        <p class="pictures-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quis quos quae quam voluptate
+                    <li class="projects__gallery-items">
+                        <div class="projects__gallery-img-block">
+                            <picture>
+                                <source media="(min-width: 1200px)" srcset="
+                                ./images/projects/projects-4-desktop.webp 1x,
+                                ./images/projects/projects-4-desktop@2x.webp 2x
+                                "
+                                type="image/webp"
+                                >
+
+                                <source media="(min-width: 1200px)" srcset="
+                                ./images/projects/projects-4-desktop.jpg 1x,
+                                ./images/projects/projects-4-desktop@2x.jpg 2x
+                                "
+                                >
+
+                                <source media="(min-width: 768px)" srcset="
+                                ./images/projects/projects-4-tablet.webp 1x,
+                                ./images/projects/projects-4-tablet@2x.webp 2x
+                                "
+                                type="image/webp"
+                                >
+
+                                <source media="(min-width: 768px)" srcset="
+                                ./images/projects/projects-4-tablet.jpg 1x,
+                                ./images/projects/projects-4-tablet@2x.jpg 2x
+                                "
+                                >
+
+                                <source srcset="
+                                ./images/projects/projects-4.webp 1x,
+                                ./images/projects/projects-4@2x.webp 2x
+                                "
+                                type="image/webp"
+                                >
+
+                                <source srcset="
+                                ./images/projects/projects-4.jpg 1x,
+                                ./images/projects/projects-4@2x.jpg 2x
+                                "
+                                >
+                                
+                                <img src="./images/projects/projects-4.jpg" alt="Наушники">
+                            </picture>
+                        
+                        <p class="projects__gallery-pictures-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quis quos quae quam voluptate
                             eaque similique! Nostrum libero error quaerat.</p>
                         </div>
-                        <div class="gallery-block">
-                            <h2 class="list-titles">Проект<span lang="en">Prime</span></h2>
-                            <p class="list-text">Маркетинг</p>
+                        <div class="projects__gallery-block">
+                            <h2 class="projects__gallery-list-titles">Проект <span lang="en">Prime</span></h2>
+                            <p class="projects__gallery-list-text">Маркетинг</p>
                         </div>
                     </li>
 
-                    <li class="gallery-items">
-                        <div class="gallery-pictures-block">
-                        <img src="./images/boxes.jpg" alt="Картонные коробочки" width="100%">
-                        <p class="pictures-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quis quos quae quam voluptate
+                    <li class="projects__gallery-items">
+                        <div class="projects__gallery-img-block">
+                            <picture>
+                                <source media="(min-width: 1200px)" srcset="
+                                ./images/projects/projects-5-desktop.webp 1x,
+                                ./images/projects/projects-5-desktop@2x.webp 2x
+                                "
+                                type="image/webp"
+                                >
+
+                                <source media="(min-width: 1200px)" srcset="
+                                ./images/projects/projects-5-desktop.jpg 1x,
+                                ./images/projects/projects-5-desktop@2x.jpg 2x
+                                "
+                                >
+
+                                <source media="(min-width: 768px)" srcset="
+                                ./images/projects/projects-5-tablet.webp 1x,
+                                ./images/projects/projects-5-tablet@2x.webp 2x
+                                "
+                                type="image/webp"
+                                >
+
+                                <source media="(min-width: 768px)" srcset="
+                                ./images/projects/projects-5-tablet.jpg 1x,
+                                ./images/projects/projects-5-tablet@2x.jpg 2x
+                                "
+                                >
+
+                                <source srcset="
+                                ./images/projects/projects-5.webp 1x,
+                                ./images/projects/projects-5@2x.webp 2x
+                                "
+                                type="image/webp"
+                                >
+
+                                <source srcset="
+                                ./images/projects/projects-5.jpg 1x,
+                                ./images/projects/projects-5@2x.jpg 2x
+                                "
+                                >
+                                
+                                <img src="./images/projects/projects-5.jpg" alt="Картонные коробочки">
+                            </picture>
+                        
+                        <p class="projects__gallery-pictures-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quis quos quae quam voluptate
                             eaque similique! Nostrum libero error quaerat.</p>
                         </div>
-                        <div class="gallery-block">
-                            <h2 class="list-titles">Проект<span lang="en">Boxes</span></h2>
-                            <p class="list-text">Приложение</p>
+                        <div class="projects__gallery-block">
+                            <h2 class="projects__gallery-list-titles">Проект <span lang="en">Boxes</span></h2>
+                            <p class="projects__gallery-list-text">Приложение</p>
                         </div>
                     </li>
 
-                    <li class="gallery-items">
-                        <div class="gallery-pictures-block">
-                        <img src="./images/monitor.jpg" alt="Веб-сайт на экране компьютера" width="100%">
-                        <p class="pictures-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quis quos quae quam voluptate
+                    <li class="projects__gallery-items">
+                        <div class="projects__gallery-img-block">
+                            <picture>
+                                <source media="(min-width: 1200px)" srcset="
+                                ./images/projects/projects-6-desktop.webp 1x,
+                                ./images/projects/projects-6-desktop@2x.webp 2x
+                                "
+                                type="image/webp"
+                                >
+
+                                <source media="(min-width: 1200px)" srcset="
+                                ./images/projects/projects-6-desktop.jpg 1x,
+                                ./images/projects/projects-6-desktop@2x.jpg 2x
+                                "
+                                >
+
+                                <source media="(min-width: 768px)" srcset="
+                                ./images/projects/projects-6-tablet.webp 1x,
+                                ./images/projects/projects-6-tablet@2x.webp 2x
+                                "
+                                type="image/webp"
+                                >
+
+                                <source media="(min-width: 768px)" srcset="
+                                ./images/projects/projects-6-tablet.jpg 1x,
+                                ./images/projects/projects-6-tablet@2x.jpg 2x
+                                "
+                                >
+
+                                <source srcset="
+                                ./images/projects/projects-6.webp 1x,
+                                ./images/projects/projects-6@2x.webp 2x
+                                "
+                                type="image/webp"
+                                >
+
+                                <source srcset="
+                                ./images/projects/projects-6.jpg 1x,
+                                ./images/projects/projects-6@2x.jpg 2x
+                                "
+                                >
+                                
+                                <img src="./images/projects/projects-6.jpg" alt="Веб-сайт на экране компьютера">
+                            </picture>
+                        
+                        <p class="projects__gallery-pictures-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quis quos quae quam voluptate
                             eaque similique! Nostrum libero error quaerat.</p>
                         </div>
-                        <div class="gallery-block">
-                            <h2 class="list-titles"><span lang="en">Inspiration has no Borders</span></h2>
-                            <p class="list-text">Веб-сайт</p>
+                        <div class="projects__gallery-block">
+                            <h2 class="projects__gallery-list-titles"><span lang="en">Inspiration has no Borders</span></h2>
+                            <p class="projects__gallery-list-text">Веб-сайт</p>
                         </div>
                     </li>
 
-                    <li class="gallery-items">
-                        <div class="gallery-pictures-block">
-                        <img src="./images/book.jpg" alt="Журнал" width="100%">
-                        <p class="pictures-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quis quos quae quam voluptate
+                    <li class="projects__gallery-items">
+                        <div class="projects__gallery-img-block">
+                            <picture>
+                                <source media="(min-width: 1200px)" srcset="
+                                ./images/projects/projects-7-desktop.webp 1x,
+                                ./images/projects/projects-7-desktop@2x.webp 2x
+                                "
+                                type="image/webp"
+                                >
+
+                                <source media="(min-width: 1200px)" srcset="
+                                ./images/projects/projects-7-desktop.jpg 1x,
+                                ./images/projects/projects-7-desktop@2x.jpg 2x
+                                "
+                                >
+
+                                <source media="(min-width: 768px)" srcset="
+                                ./images/projects/projects-7-tablet.webp 1x,
+                                ./images/projects/projects-7-tablet@2x.webp 2x
+                                "
+                                type="image/webp"
+                                >
+
+                                <source media="(min-width: 768px)" srcset="
+                                ./images/projects/projects-7-tablet.jpg 1x,
+                                ./images/projects/projects-7-tablet@2x.jpg 2x
+                                "
+                                >
+
+                                <source srcset="
+                                ./images/projects/projects-7.webp 1x,
+                                ./images/projects/projects-7@2x.webp 2x
+                                "
+                                type="image/webp"
+                                >
+
+                                <source srcset="
+                                ./images/projects/projects-7.jpg 1x,
+                                ./images/projects/projects-7@2x.jpg 2x
+                                "
+                                >
+                                
+                                <img src="./images/projects/projects-7.jpg" alt="Журнал">
+                            </picture>
+                        
+                        <p class="projects__gallery-pictures-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quis quos quae quam voluptate
                             eaque similique! Nostrum libero error quaerat.</p>
                         </div>
-                        <div class="gallery-block">
-                            <h2 class="list-titles">Издание<span lang="en">Limited Edition</span></h2>
-                            <p class="list-text">Дизайн</p>
+                        <div class="projects__gallery-block">
+                            <h2 class="projects__gallery-list-titles">Издание <span lang="en">Limited Edition</span></h2>
+                            <p class="projects__gallery-list-text">Дизайн</p>
                         </div>
                     </li>
 
-                    <li class="gallery-items">
-                        <div class="gallery-pictures-block">
-                        <img src="./images/project-lab.jpg" alt="Картонная бирка" width="100%">
-                        <p class="pictures-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quis quos quae quam voluptate
+                    <li class="projects__gallery-items">
+                        <div class="projects__gallery-img-block">
+                            <picture>
+                                <source media="(min-width: 1200px)" srcset="
+                                ./images/projects/projects-8-desktop.webp 1x,
+                                ./images/projects/projects-8-desktop@2x.webp 2x
+                                "
+                                type="image/webp"
+                                >
+
+                                <source media="(min-width: 1200px)" srcset="
+                                ./images/projects/projects-8-desktop.jpg 1x,
+                                ./images/projects/projects-8-desktop@2x.jpg 2x
+                                "
+                                >
+
+                                <source media="(min-width: 768px)" srcset="
+                                ./images/projects/projects-8-tablet.webp 1x,
+                                ./images/projects/projects-8-tablet@2x.webp 2x
+                                "
+                                type="image/webp"
+                                >
+
+                                <source media="(min-width: 768px)" srcset="
+                                ./images/projects/projects-8-tablet.jpg 1x,
+                                ./images/projects/projects-8-tablet@2x.jpg 2x
+                                "
+                                >
+
+                                <source srcset="
+                                ./images/projects/projects-8.webp 1x,
+                                ./images/projects/projects-8@2x.webp 2x
+                                "
+                                type="image/webp"
+                                >
+
+                                <source srcset="
+                                ./images/projects/projects-8.jpg 1x,
+                                ./images/projects/projects-8@2x.jpg 2x
+                                "
+                                >
+                                
+                                <img src="./images/projects/projects-8.jpg" alt="Картонная бирка">
+                            </picture>
+                        
+                        <p class="projects__gallery-pictures-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quis quos quae quam voluptate
                             eaque similique! Nostrum libero error quaerat.</p>
                         </div>
-                        <div class="gallery-block">
-                            <h2 class="list-titles">Проект<span lang="en">LAB</span></h2>
-                            <p class="list-text">Маркетинг</p>
+                        <div class="projects__gallery-block">
+                            <h2 class="projects__gallery-list-titles">Проект <span lang="en">LAB</span></h2>
+                            <p class="projects__gallery-list-text">Маркетинг</p>
                         </div>
                     </li>
 
-                    <li class="gallery-items">
-                        <div class="gallery-pictures-block">
-                        <img src="./images/business.jpg" alt="Ноутбук" width="100%">
-                        <p class="pictures-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quis quos quae quam voluptate
+                    <li class="projects__gallery-items">
+                        <div class="projects__gallery-img-block">
+                            <picture>
+                                <source media="(min-width: 1200px)" srcset="
+                                ./images/projects/projects-9-desktop.webp 1x,
+                                ./images/projects/projects-9-desktop@2x.webp 2x
+                                "
+                                type="image/webp"
+                                >
+
+                                <source media="(min-width: 1200px)" srcset="
+                                ./images/projects/projects-9-desktop.jpg 1x,
+                                ./images/projects/projects-9-desktop@2x.jpg 2x
+                                "
+                                >
+
+                                <source media="(min-width: 768px)" srcset="
+                                ./images/projects/projects-9-tablet.webp 1x,
+                                ./images/projects/projects-9-tablet@2x.webp 2x
+                                "
+                                type="image/webp"
+                                >
+
+                                <source media="(min-width: 768px)" srcset="
+                                ./images/projects/projects-9-tablet.jpg 1x,
+                                ./images/projects/projects-9-tablet@2x.jpg 2x
+                                "
+                                >
+
+                                <source srcset="
+                                ./images/projects/projects-9.webp 1x,
+                                ./images/projects/projects-9@2x.webp 2x
+                                "
+                                type="image/webp"
+                                >
+
+                                <source srcset="
+                                ./images/projects/projects-9.jpg 1x,
+                                ./images/projects/projects-9@2x.jpg 2x
+                                "
+                                >
+                                
+                                <img src="./images/projects/projects-9.jpg" alt="Ноутбук">
+                            </picture>
+                        
+                        <p class="projects__gallery-pictures-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quis quos quae quam voluptate
                             eaque similique! Nostrum libero error quaerat.</p>
                         </div>
-                        <div class="gallery-block">
-                            <h2 class="list-titles"><span lang="en">Growing Business</span></h2>
-                            <p class="list-text">Приложение</p>
+                        <div class="projects__gallery-block">
+                            <h2 class="projects__gallery-list-titles"><span lang="en">Growing Business</span></h2>
+                            <p class="projects__gallery-list-text">Приложение</p>
                         </div>
                     </li>
                 </ul>
@@ -244,45 +623,45 @@
     <!-- Футер -->
 
     <footer class="footer">
-        <div class="container footer-container">
-            <div class="footer-row">
-                <div class="footer-adress">
-                    <a class="logo-footer logo link" href="index.html" lang="en"><span class="accent">Web</span>Studio</a>
+        <div class="container container__footer">
+            <div class="footer__row">
+                <div class="footer__address-box">
+                    <a class="footer__logo logo link" href="index.html" lang="en"><span class="accent">Web</span>Studio</a>
                     <address class="address">
-                        <a class="address-link link" href="https://goo.gl/maps/7NLm5bi6WT52SHXh7">г. Киев, пр-т Леси
+                        <a class="address__link link" href="https://goo.gl/maps/7NLm5bi6WT52SHXh7">г. Киев, пр-т Леси
                             Украинки,
                             26</a><br>
-                        <a class="footer-contacts link" href="mailto:info@example.com">info@example.com</a> <br>
-                        <a class="footer-contacts link" href="tel:+380991111111">+38 099 111 11 11</a>
+                        <a class="address__contacts link" href="mailto:info@example.com">info@example.com</a> <br>
+                        <a class="address__contacts link" href="tel:+380991111111">+38 099 111 11 11</a>
                     </address>
                 </div>
-                <div class="footer-social">
-                    <b class="footer-join">присоединяйтесь</b>
-                    <ul class="footer-list list">
-                        <li class="footer-social-item">
-                            <a href="" class="footer-social-link">
-                                <svg class="footer-social-icon" width="20px" height="20px">
+                <div class="footer__social">
+                    <b class="footer__join">присоединяйтесь</b>
+                    <ul class="footer__list list">
+                        <li class="footer__social-item">
+                            <a href="" class="footer__social-link">
+                                <svg class="footer__social-icon" width="20px" height="20px">
                                     <use href="./images/icons.svg#icon-instagram"></use>
                                 </svg>
                             </a>
                         </li>
-                        <li class="footer-social-item">
-                            <a href="" class="footer-social-link">
-                                <svg class="footer-social-icon" width="20px" height="20px">
+                        <li class="footer__social-item">
+                            <a href="" class="footer__social-link">
+                                <svg class="footer__social-icon" width="20px" height="20px">
                                     <use href="./images/icons.svg#icon-twitter"></use>
                                 </svg>
                             </a>
                         </li>
-                        <li class="footer-social-item">
-                            <a href="" class="footer-social-link">
-                                <svg class="footer-social-icon" width="20px" height="20px">
+                        <li class="footer__social-item">
+                            <a href="" class="footer__social-link">
+                                <svg class="footer__social-icon" width="20px" height="20px">
                                     <use href="./images/icons.svg#icon-facebook"></use>
                                 </svg>
                             </a>
                         </li>
-                        <li class="footer-social-item">
-                            <a href="" class="footer-social-link">
-                                <svg class="footer-social-icon" width="20px" height="20px">
+                        <li class="footer__social-item">
+                            <a href="" class="footer__social-link">
+                                <svg class="footer__social-icon" width="20px" height="20px">
                                     <use href="./images/icons.svg#icon-linkedin"></use>
                                 </svg>
                             </a>
@@ -295,12 +674,12 @@
             <!-- Форма в футере -->
             
             <form class="footer-form">
-                <b class="footer-action">Подпишитесь на рассылку</b>
-                <div class="footer-form-block"><label class="footer-label">
-                        <input type="email" placeholder="E-mail" class="footer-input" name="user-email-footer" pattern="[@]+"
+                <b class="footer-form__action">Подпишитесь на рассылку</b>
+                <div class="footer-form__block"><label class="footer-label">
+                        <input type="email" placeholder="E-mail" class="footer-form__input" name="user-email-footer" pattern="[@]+"
                             title="my@gmail.com" required></label>
-                    <button class="footer-form-button" type="submit">Подписаться
-                        <svg class="footer-forms-icon" width="24" height="24">
+                    <button class="footer-form__button" type="submit">Подписаться
+                        <svg class="footer-forms__icon" width="24" height="24">
                             <use href="./images/icons.svg#icon-send"></use>
                         </svg></button>
                 </div>

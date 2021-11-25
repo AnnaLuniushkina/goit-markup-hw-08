@@ -1,4 +1,4 @@
-.clients-title {
+.clients__title {
 	margin-bottom: 30px;
 
 	@media screen and (min-width: 1200px) {
@@ -6,7 +6,7 @@
 	}
 }
 
-.clients-list {
+.clients__list {
 	display: flex;
 	flex-wrap: wrap;
 
@@ -18,7 +18,7 @@
 	}
 }
 
-.clients-item {
+.clients__item {
 	display: block;
 	width: 170px;
 	height: 92px;
@@ -35,7 +35,7 @@
 	// }
 }
 
-.clients-link {
+.clients__link {
 	width: 100%;
 	height: 100%;
 	border: 1px solid #afb1b8;
